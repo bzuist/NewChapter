@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход в систему - NewChapter</title>
+  <link rel="stylesheet" href="login.component.css">
+</head>
+
+<body>
+  <div class="login-container">
+    <header>
+      <nav class="nav-bar">
+        <a href="#">Блоги</a>
+        <a href="#">Главная</a>
+        <a href="#">Работы</a>
+        <a href="#">Поиск</a>
+        <a href="#">Меню</a>
+        <a href="#">Домой</a>
+      </nav>
+      <div class="logo">
+        <div class="logo-text">NC</div>
+        <p>NewChapter</p>
+        <p>От главы к книге</p>
+      </div>
+    </header>
+
+    <div class="form-container">
+      <h2>Войти</h2>
+      <div class="input">
+        <input type="text" placeholder="Имя пользователя" [(ngModel)]="credential.username">
+      </div>
+      <div class="input">
+        <input type="password" placeholder="Пароль" [(ngModel)]="credential.password">
+      </div>
+      <div class="form-buttons">
+        <button class="login-button" (click)="login()">Войти</button>
+      </div>
+      <p class="no-account">Нет аккаунта?</p>
+      <div class="form-buttons">
+        <button class="register-button" (click)="goToRegistration()">Зарегистрироваться</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

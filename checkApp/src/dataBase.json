@@ -1,0 +1,138 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "1234",
+      "roles": [
+        "SUPER_USER"
+      ]
+    },
+    {
+      "id": "2",
+      "username": "author",
+      "password": "123456",
+      "roles": [
+        "AUTHOR"
+      ]
+    },
+    {
+      "id": "3",
+      "username": "author1",
+      "password": "1209",
+      "roles": [
+        "AUTHOR"
+      ]
+    },
+    {
+      "id": "4",
+      "username": "author3",
+      "password": "321",
+      "roles": [
+        "AUTHOR"
+      ]
+    },
+    {
+      "id": "01ad",
+      "username": "фвапвыф",
+      "password": "23412ф"
+    },
+    {
+      "id": "28e9",
+      "username": "фвапвыф",
+      "password": "23412ф"
+    },
+    {
+      "id": "8038",
+      "username": "btszaya",
+      "password": "1234vv",
+      "role": "AUTHOR"
+    },
+    {
+      "id": "0a19",
+      "username": "btszaya",
+      "password": "1234vv",
+      "role": "AUTHOR"
+    },
+    {
+      "id": "7993",
+      "username": "bbbb11",
+      "password": "glamour1",
+      "role": "AUTHOR"
+    },
+    {
+      "id": "aa8c",
+      "username": "bbbb11",
+      "password": "glamour1",
+      "role": "AUTHOR"
+    },
+    {
+      "id": "3acf",
+      "username": "1222bb",
+      "password": "1234bb",
+      "role": "AUTHOR"
+    },
+    {
+      "id": "eeff",
+      "username": "1222bb",
+      "password": "1234bb",
+      "role": "AUTHOR"
+    },
+    {
+      "id": "ac13",
+      "username": "zaq12wsx",
+      "password": "zaq12wsx",
+      "role": "AUTHOR"
+    },
+    {
+      "id": "4d67",
+      "username": "zaq12wsx",
+      "password": "zaq12wsx",
+      "role": "AUTHOR"
+    }
+  ],
+  "genres": [
+    {
+      "id": "1",
+      "name": "Drama"
+    },
+    {
+      "id": "2",
+      "name": "Romance"
+    }
+  ],
+  "fanfics": [
+    {
+      "id": "2",
+      "title": "YURIIIIII",
+      "author": "author1",
+      "description": "asdasd",
+      "text": "asdasd",
+      "genre": "Drama"
+    },
+    {
+      "id": "3",
+      "title": "Lost boys",
+      "author": "author1",
+      "description": "They are Lost Boys, all of them haunted by their own tragic fates. This is the story of how they met each other. A story of friendship, love, and betrayal",
+      "text": "They are Lost Boys, all of them haunted by their own tragic fates. This is the story of how they met each other. A story of friendship, love, and betrayal",
+      "genre": "Drama"
+    },
+    {
+      "id": "4",
+      "title": "Orchestra Boys",
+      "author": "author",
+      "description": "orchestra and ballet kids were supposed to stay separated.the mingling of both in two boys was bound to end them in rivalry. but who knew what would happen if they decided to help each other out, starting something more than just a friendship...",
+      "text": "orchestra and ballet kids were supposed to stay separated.the mingling of both in two boys was bound to end them in rivalry. but who knew what would happen if they decided to help each other out, starting something more than just a friendship...",
+      "genre": "Drama"
+    },
+    {
+      "id": "5",
+      "title": "Legilimency",
+      "author": "author3",
+      "description": "Tom comes to Dumbledore with an unusual request.",
+      "text": "I can make them hurt if I want to.",
+      "genre": "Romance"
+    }
+  ]
+}

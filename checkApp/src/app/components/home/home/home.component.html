@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewChapter</title>
+  <link rel="stylesheet" href="./home.component.css">
+</head>
+<body>
+  <div class="nav-bar">
+    <a href="#">Блоги</a>
+    <a href="#">Главная</a>
+    <a href="#">Работы</a>
+    <div class="logo-container">
+      <img src="https://pngimg.com/d/book_PNG2107.png" alt="NewChapter Logo">
+      <p>NewChapter</p>
+    </div>
+    <a href="#">Поиск</a>
+    <a href="#">Меню</a>
+    <a href="#">Домой</a>
+  </div>
+
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1>Фикбук</h1>
+      <div class="search-login">
+        <input type="text" placeholder="Поиск...">
+        <div *ngIf="!isLoggedIn; else userProfile">
+          <a routerLink="/login">Вход</a>
+          <a routerLink="/register">Регистрация</a>
+        </div>
+        <ng-template #userProfile>
+          <a routerLink="/profile">Профиль</a>
+        </ng-template>
+      </div>
+    </header>
+
+    <!-- Popular Works -->
+    <section class="works">
+      <h2>Популярные произведения</h2>
+      <div class="grid">
+        <div *ngFor="let work of Fanfic" class="card">
+          <h3>{{ }}</h3>
+          <p>Автор: {{  }}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Blogs -->
+    <section class="blogs">
+      <h2>Популярные записи в блогах</h2>
+      <div class="grid">
+        <div *ngFor="let post of Post" class="card">
+          <h3>{{  }}</h3>
+          <p>Автор: {{  }}</p>
+          <p>{{  }}</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
