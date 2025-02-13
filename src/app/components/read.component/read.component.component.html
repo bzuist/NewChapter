@@ -20,8 +20,7 @@
     <a routerLink="/home">Домой</a>
   </div>
 
-  <div class="container">
-    <header class="header">
+ <header class="header">
       <div class="search-login">
         <div *ngIf="!isLoggedIn; else userProfile">
           <a routerLink="/login">Вход</a>
@@ -32,19 +31,33 @@
         </ng-template>
       </div>
     </header>
+  <div class="container">
 
-    <div *ngIf="fanfic; else loading">
-      <div class="text">
-        <h1>{{fanfic.name}}</h1>
-        <h2>Автор ID: {{fanfic.userID}}</h2>
-        <p>{{fanfic.description}}</p>
-        <p>{{fanfic.text}}</p>
+
+    <div class="reader">
+      <div class="controls">
+        <button (click)="increaseFontSize()">A+</button>
+        <button (click)="decreaseFontSize()">A-</button>
       </div>
+
+      <div *ngIf="fanfic; else loading">
+        <div class="text">
+          <h1>{{fanfic.name}}</h1>
+          <p><strong>Автор:</strong> {{ authorName }}</p>
+          <p>{{fanfic.description}}</p>
+          <p id="fanficText">{{fanfic.text}}</p>
+        </div>
+      </div>
+
+      <ng-template #loading>
+        <p>Загрузка...</p>
+      </ng-template>
     </div>
 
     <ng-template #loading>
       <p>Загрузка...</p>
     </ng-template>
   </div>
+
 </body>
 </html>
